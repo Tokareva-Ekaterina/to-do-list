@@ -1,0 +1,107 @@
+body {
+    font-family: Montserrat;
+    color: #252B42;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.page {
+    max-width: 700px;
+    margin: 40px auto;
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 4px 4px 6px rgba(121, 121, 121, 0.5);
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 0;
+    background-color: rgb(255, 211, 77);
+}
+
+li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: #ccc 1px solid;
+    padding: 10px 10px 10px 15px;
+}
+
+
+
+li>button {
+    visibility: hidden;
+}
+
+li:hover>button {
+    visibility: visible;
+}
+
+.todo-item .title{
+    flex-grow: 1;
+}
+
+.todo-item .text-field{
+    display: none;
+}
+
+.todo-item_edit .text-field{
+    display: inline-block;
+    flex-grow: 1;
+}
+
+.todo-item_edit .title{
+    display: none;
+}
+
+.todo-item_check {
+    color: #cecece;
+}
+
+.todo-item_check .title{
+    text-decoration: line-through;
+}
+
+.checkbox {
+    margin: 0 5px 0;
+}
+
+.todo-form {
+    padding: 10px;
+    background-color: #fafafa;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.add-input {
+    flex-grow: 1;
+}
+
+.add-input, .text-field{
+    border: 1px #ccc solid;
+    height: 30px;
+    border-radius: 2px;
+}
+
+
+button {
+    padding: 20px 10px;
+    background-color: transparent;
+}
+
+button:hover {
+    background-color: rgba(158,158,158,.2);
+}
+
+.text-field, .add-input{
+    padding: 0.3rem 0.7rem;
+}
+
+.text-field:focus, .add-input:focus{
+    border: 1px solid #f0db4f;
+}
