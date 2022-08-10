@@ -1,13 +1,17 @@
 body {
     font-family: Montserrat;
     color: #252B42;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
+}
+
+.wrapper{
+    padding: 30px 20px 40px;
 }
 
 .page {
     max-width: 700px;
-    margin: 40px auto;
+    margin: 0 auto;
     border: 1px #ccc solid;
     border-radius: 5px;
     overflow: hidden;
